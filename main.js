@@ -1,17 +1,27 @@
-const first = 'qwertyuiop[]';
-const second = 'asdfghjkl;';
-const third = 'zxcvbnm,./';
+const firstLine = 'qwertyuiop[]';
+const secondLine = 'asdfghjkl;';
+const thirdLine = 'zxcvbnm,./';
 
-const one = first.length;
-const two = second.length;
-const three = third.length;
+const firstLineLengh = firstLine.length;
+const secondLineLengh = secondLine.length;
+const thirdLineLengh  = thirdLine.length;
 
 
-console.log( first.charAt(0) + first.charAt(11) );
-console.log(second.charAt(0) + second.charAt(10) );
-console.log(third.charAt(0) + third.charAt(9) );
+let firstLineSymbols = firstLine.charAt(0) + firstLine.charAt(11) ;
+let secondLineSymbols = secondLine.charAt(0) + secondLine.charAt(11) ;
+let thirdLineSymbols = thirdLine.charAt(0) + thirdLine.charAt(9) ;
 
-let a = first.indexOf("[");
-let b = first.indexOf("]");
+let searchLeftBracket = firstLine.indexOf("[");
+let searchRightBracket = firstLine.indexOf("]");
 
-console.log(`first = ${first},second = ${second}, third = ${third}, one = ${one}, two = ${two}, three = ${three}, a = ${a}, b = ${b}`);
+console.log(`firstLine = ${firstLine},
+             secondLine = ${secondLine}, 
+             thirdLine = ${thirdLine}, 
+             firstLineLengh= ${firstLineLengh},
+             secondLineLengh= ${secondLineLengh},
+             thirdLineLengh = ${thirdLineLengh}, 
+             firstLineSymbols = ${firstLineSymbols},
+             secondLineSymbols = ${secondLineSymbols},
+             thirdLineSymbols = ${thirdLineSymbols},
+             searchLeftBracket = ${searchLeftBracket}, 
+             searchRightBracket = ${searchRightBracket}`);

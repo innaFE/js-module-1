@@ -7,12 +7,12 @@ const secondLineLengh = secondLine.length;
 const thirdLineLengh  = thirdLine.length;
 
 
-let firstLineSymbols = firstLine.charAt(0) + firstLine.charAt(11) ;
-let secondLineSymbols = secondLine.charAt(0) + secondLine.charAt(11) ;
-let thirdLineSymbols = thirdLine.charAt(0) + thirdLine.charAt(9) ;
+const firstLineSymbols = firstLine.charAt(0) + firstLine.charAt(firstLineLengh - 1) ;
+const secondLineSymbols = secondLine.charAt(0) + secondLine.charAt(secondLineLengh - 1) ;
+const thirdLineSymbols = thirdLine.charAt(0) + thirdLine.charAt(thirdLineLengh - 1) ;
 
-let searchLeftBracket = firstLine.indexOf("[");
-let searchRightBracket = firstLine.indexOf("]");
+const searchLeftBracket = firstLine.indexOf("[");
+const searchRightBracket = firstLine.indexOf("]");
 
 console.log(`firstLine = ${firstLine},
              secondLine = ${secondLine}, 
